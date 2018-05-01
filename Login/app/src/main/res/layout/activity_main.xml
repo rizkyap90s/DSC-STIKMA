@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/igback"
+    android:padding="20dp"
+    android:gravity="bottom"
+    tools:context="com.example.wannacry.login.MainActivity">
+
+    <ImageView
+        android:onClick="klik"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/loginfb"/>
+
+    <EditText
+        android:id="@+id/masukemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/masukpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"/>
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account?"/>
+        <TextView
+            android:onClick="onClickAlert"
+            android:textSize="15dp"
+            android:textColor="#5a48ff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Click Here"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" for Sign up"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnmasuk"
+        android:textColor="#4d4df2"
+        android:layout_gravity="right"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        />
+
+</LinearLayout>
